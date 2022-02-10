@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFCC3193B644957AADD604B5 /* Pods_Travel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473A2D99FAEE116CA4820061 /* Pods_Travel.framework */; };
 		B5AAAB9527B17F6300970AC8 /* TravelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAAB9427B17F6300970AC8 /* TravelApp.swift */; };
 		B5AAAB9727B17F6300970AC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAAB9627B17F6300970AC8 /* ContentView.swift */; };
 		B5AAAB9927B17F6500970AC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AAAB9827B17F6500970AC8 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		473A2D99FAEE116CA4820061 /* Pods_Travel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Travel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5AAAB9127B17F6300970AC8 /* Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5AAAB9427B17F6300970AC8 /* TravelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelApp.swift; sourceTree = "<group>"; };
 		B5AAAB9627B17F6300970AC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +35,8 @@
 		B5AAABAA27B180A200970AC8 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 		B5AAABAC27B1812200970AC8 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = locations.json; path = ../../../../../Downloads/Assets/locations.json; sourceTree = "<group>"; };
 		B5AAABAE27B1812700970AC8 /* tips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = tips.json; path = ../../../../../Downloads/Assets/tips.json; sourceTree = "<group>"; };
+		CD4C51A192622178C1F2B51D /* Pods-Travel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travel.release.xcconfig"; path = "Target Support Files/Pods-Travel/Pods-Travel.release.xcconfig"; sourceTree = "<group>"; };
+		DA22C9FD2676BC4FF7351B9F /* Pods-Travel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travel.debug.xcconfig"; path = "Target Support Files/Pods-Travel/Pods-Travel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,17 +44,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFCC3193B644957AADD604B5 /* Pods_Travel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BD90C98D2CC2F4CC94E9102 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				473A2D99FAEE116CA4820061 /* Pods_Travel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5AAAB8827B17F6300970AC8 = {
 			isa = PBXGroup;
 			children = (
 				B5AAAB9327B17F6300970AC8 /* Travel */,
 				B5AAAB9227B17F6300970AC8 /* Products */,
+				B912B676B9F5BDAE2C7390F0 /* Pods */,
+				2BD90C98D2CC2F4CC94E9102 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +103,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B912B676B9F5BDAE2C7390F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA22C9FD2676BC4FF7351B9F /* Pods-Travel.debug.xcconfig */,
+				CD4C51A192622178C1F2B51D /* Pods-Travel.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,6 +120,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5AAAB9F27B17F6500970AC8 /* Build configuration list for PBXNativeTarget "Travel" */;
 			buildPhases = (
+				45C6F8E1D762AAD26E4206FE /* [CP] Check Pods Manifest.lock */,
 				B5AAAB8D27B17F6300970AC8 /* Sources */,
 				B5AAAB8E27B17F6300970AC8 /* Frameworks */,
 				B5AAAB8F27B17F6300970AC8 /* Resources */,
@@ -154,6 +180,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45C6F8E1D762AAD26E4206FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Travel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5AAAB8D27B17F6300970AC8 /* Sources */ = {
@@ -291,6 +342,7 @@
 		};
 		B5AAABA027B17F6500970AC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA22C9FD2676BC4FF7351B9F /* Pods-Travel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,6 +372,7 @@
 		};
 		B5AAABA127B17F6500970AC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD4C51A192622178C1F2B51D /* Pods-Travel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
